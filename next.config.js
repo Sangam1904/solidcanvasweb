@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Enable static export for traditional hosting
+  output: 'export',
+  trailingSlash: true,
   images: {
     domains: ['localhost', 'images.unsplash.com', 'via.placeholder.com'],
     formats: ['image/webp', 'image/avif'],
+    unoptimized: true
   },
   webpack: (config) => {
     config.module.rules.push({
