@@ -31,7 +31,7 @@ export default function Contact() {
       // Send via mailto as a zero-backend fallback
       const subject = `New Project Inquiry from ${formData.name}`
       const body = `Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0ACompany: ${formData.company}%0D%0AProject Type: ${formData.projectType}%0D%0ABudget: ${formData.budget}%0D%0A%0D%0ADetails:%0D%0A${encodeURIComponent(formData.message)}`
-      const mailto = `mailto:anythingcandesign@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`
+      const mailto = `mailto:solidcanvas@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`
       window.location.href = mailto
       await new Promise(resolve => setTimeout(resolve, 1000))
     } catch {}
@@ -57,9 +57,9 @@ export default function Contact() {
     {
       icon: Mail,
       title: 'Email Us',
-      details: 'anythingcandesign@gmail.com',
+      details: 'solidcanvas@gmail.com',
       description: 'Get a detailed quote and project discussion',
-      action: 'mailto:anythingcandesign@gmail.com'
+      action: 'mailto:solidcanvas@gmail.com'
     },
     {
       icon: Phone,
@@ -86,11 +86,11 @@ export default function Contact() {
 
   const projectTypes = [
     'CAD Modeling',
-    '3D Design',
-    'Product Animation',
-    'Rendering',
-    'Simulation',
-    'Documentation',
+    'CAE & FEA Analysis',
+    'Solar Structure Design',
+    'Rendering & Animation',
+    'Mechanical Engineering',
+    'Technical Documentation',
     'Other'
   ]
 
@@ -107,7 +107,7 @@ export default function Contact() {
   return (
     <Layout 
       title="Contact Us"
-      description="Get in touch with DesignAnything for your CAD modeling, 3D design, and product animation needs. Free consultation available."
+      description="Get in touch with SolidCanvas for your CAD modeling, CAE analysis, FEA simulation, and solar structure design needs. Free consultation available."
     >
       {/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-dark dark:to-gray-900">
@@ -122,8 +122,8 @@ export default function Contact() {
               Get In <span className="gradient-text">Touch</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Ready to transform your ideas into reality? Let's discuss your project requirements 
-              and create something amazing together.
+              Ready to bring your engineering ideas to life? Let's discuss your CAD, CAE, FEA, or solar structure design requirements 
+              and deliver precise, reliable solutions together.
             </p>
           </motion.div>
         </div>

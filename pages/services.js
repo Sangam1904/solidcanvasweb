@@ -5,10 +5,10 @@ import { Box, Zap, Video, Palette, Settings, FileText, CheckCircle } from 'lucid
 export default function Services() {
   const services = [
     {
-      id: 'cad',
+      id: 'cad-modeling',
       icon: Box,
       title: 'CAD Modeling',
-      description: 'Professional 3D modeling using industry-standard software for mechanical, industrial, and product design.',
+      description: 'Professional 3D modeling using SOLIDWORKS and UG NX for mechanical, industrial, and product design.',
       features: [
         'Mechanical component design',
         'Assembly modeling and management',
@@ -17,62 +17,14 @@ export default function Services() {
         'Weldment design',
         'Surface modeling'
       ],
-      software: ['SOLIDWORKS', 'CATIA', 'AutoCAD', 'Inventor'],
+      software: ['SOLIDWORKS', 'UG NX', 'AutoCAD', 'Inventor'],
       color: 'from-blue-500 to-cyan-500'
     },
     {
-      id: '3d-design',
-      icon: Zap,
-      title: '3D Design',
-      description: 'Creative 3D design solutions for products, furniture, and industrial applications with complex geometry.',
-      features: [
-        'Product concept development',
-        'Industrial design',
-        'Furniture and interior design',
-        'Complex surface modeling',
-        'Aesthetic design optimization',
-        'Manufacturing-ready models'
-      ],
-      software: ['Blender', 'CATIA', 'SOLIDWORKS', 'Rhino'],
-      color: 'from-purple-500 to-pink-500'
-    },
-    {
-      id: 'animation',
-      icon: Video,
-      title: 'Product Animation',
-      description: 'High-quality product animations and visualizations for marketing, presentations, and client demonstrations.',
-      features: [
-        'Assembly and disassembly animations',
-        'Product walkthrough videos',
-        'Marketing and promotional content',
-        'Technical demonstration videos',
-        'Interactive 3D presentations',
-        'Motion graphics integration'
-      ],
-      software: ['Blender', 'SOLIDWORKS', 'CATIA', 'After Effects'],
-      color: 'from-green-500 to-emerald-500'
-    },
-    {
-      id: 'rendering',
-      icon: Palette,
-      title: 'Rendering',
-      description: 'Photorealistic renders and visualizations that bring your designs to life with stunning detail and lighting.',
-      features: [
-        'Photorealistic product renders',
-        'Material and texture setup',
-        'Advanced lighting design',
-        'Environment and background creation',
-        '360-degree product views',
-        'Marketing-ready imagery'
-      ],
-      software: ['Blender', 'V-Ray', 'KeyShot', 'SOLIDWORKS Visualize'],
-      color: 'from-orange-500 to-red-500'
-    },
-    {
-      id: 'simulation',
+      id: 'cae-analysis',
       icon: Settings,
-      title: 'Simulation',
-      description: 'Engineering analysis and simulation using advanced tools for stress analysis, thermal analysis, and optimization.',
+      title: 'CAE & FEA Analysis',
+      description: 'Advanced engineering analysis and simulation using ANSYS for structural, thermal, and optimization studies.',
       features: [
         'Structural stress analysis',
         'Thermal analysis',
@@ -85,9 +37,57 @@ export default function Services() {
       color: 'from-indigo-500 to-blue-500'
     },
     {
+      id: 'solar-structures',
+      icon: Zap,
+      title: 'Solar Structure Design',
+      description: 'Specialized design solutions for solar panel mounting structures, tracking systems, and renewable energy infrastructure.',
+      features: [
+        'Solar panel mounting systems',
+        'Tracking mechanism design',
+        'Structural analysis for wind loads',
+        'Foundation design',
+        'Material optimization',
+        'Installation planning'
+      ],
+      software: ['SOLIDWORKS', 'ANSYS', 'AutoCAD', 'STAAD.Pro'],
+      color: 'from-green-500 to-emerald-500'
+    },
+    {
+      id: 'rendering-animation',
+      icon: Video,
+      title: 'Rendering & Animation',
+      description: 'High-quality product visualizations and animations using Blender for marketing and technical presentations.',
+      features: [
+        'Photorealistic product renders',
+        'Assembly and disassembly animations',
+        'Product walkthrough videos',
+        'Marketing and promotional content',
+        'Technical demonstration videos',
+        'Interactive 3D presentations'
+      ],
+      software: ['Blender', 'SOLIDWORKS Visualize', 'V-Ray', 'After Effects'],
+      color: 'from-orange-500 to-red-500'
+    },
+    {
+      id: 'mechanical-engineering',
+      icon: Settings,
+      title: 'Mechanical Engineering',
+      description: 'Comprehensive mechanical engineering solutions from concept development to manufacturing-ready designs.',
+      features: [
+        'Product concept development',
+        'Mechanical system design',
+        'Manufacturing process optimization',
+        'Quality control and testing',
+        'Technical documentation',
+        'Project management'
+      ],
+      software: ['SOLIDWORKS', 'UG NX', 'ANSYS', 'AutoCAD'],
+      color: 'from-purple-500 to-pink-500'
+    },
+    {
       id: 'documentation',
       icon: FileText,
-      title: 'Documentation',
+      title: 'Technical Documentation',
       description: 'Complete technical documentation including drawings, specifications, and project reports.',
       features: [
         'Technical drawings and blueprints',
@@ -97,7 +97,7 @@ export default function Services() {
         'User manuals and guides',
         'Quality control documentation'
       ],
-      software: ['SOLIDWORKS', 'AutoCAD', 'CATIA', 'Microsoft Office'],
+      software: ['SOLIDWORKS', 'AutoCAD', 'UG NX', 'Microsoft Office'],
       color: 'from-gray-500 to-slate-500'
     }
   ]
@@ -138,7 +138,7 @@ export default function Services() {
   return (
     <Layout 
       title="Services"
-      description="Professional CAD modeling, 3D design, product animation, rendering, and simulation services. Transform your ideas into reality with DesignAnything."
+      description="Engineering Design Solutions in CAD, CAE, FEA & Solar Structures. SolidCanvas provides professional CAD modeling, CAE analysis, FEA simulation, and solar structure design services."
     >
       {/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-dark dark:to-gray-900">
@@ -153,8 +153,8 @@ export default function Services() {
               Our <span className="gradient-text">Services</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Comprehensive design and engineering services to bring your ideas to life. 
-              From concept to completion, we handle every aspect of your project.
+              Comprehensive engineering design solutions specializing in CAD modeling, CAE analysis, FEA simulation, and solar structure design. 
+              From concept to completion, we deliver precise, reliable, and future-ready engineering solutions.
             </p>
           </motion.div>
         </div>

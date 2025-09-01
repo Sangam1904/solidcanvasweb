@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <Layout 
       title="Home"
-      description="Bring concepts to life with Anything Can Design. High-quality CAD modeling, 3D visualization, and product animations. Innovative engineering solutions tailored for your needs."
+      description="Engineering Design Solutions in CAD, CAE, FEA & Solar Structures. SolidCanvas specializes in mechanical engineering, CAD modeling, CAE, FEA, and solar structure design."
     >
       <Hero />
       <Stats />

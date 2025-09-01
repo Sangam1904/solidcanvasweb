@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import { useState, useEffect } from 'react'
 
-export default function Layout({ children, title = 'DesignAnything', description = 'Professional CAD modeling, 3D design, and product animation services. Transform your ideas into reality with expert engineering design.' }) {
+export default function Layout({ children, title = 'SolidCanvas', description = 'Engineering Design Solutions in CAD, CAE, FEA & Solar Structures. SolidCanvas specializes in mechanical engineering, CAD modeling, CAE, FEA, and solar structure design.' }) {
   const [darkMode, setDarkMode] = useState(false)
 
   useEffect(() => {
@@ -27,22 +27,22 @@ export default function Layout({ children, title = 'DesignAnything', description
   return (
     <div className={`min-h-screen ${darkMode ? 'dark' : ''}`}>
       <Head>
-        <title>{title} | DesignAnything</title>
+        <title>{title} | SolidCanvas</title>
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="keywords" content="CAD modeling, 3D design, SOLIDWORKS, CATIA, product animation, engineering design, freelance CAD" />
-        <meta name="author" content="Sangam - DesignAnything" />
+        <meta name="keywords" content="SolidCanvas, CAD design, CAE, FEA, solar structure design, mechanical engineering solutions, SOLIDWORKS, CATIA, ANSYS, Blender" />
+        <meta name="author" content="SolidCanvas Team" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://designanything.com/" />
+        <meta property="og:url" content="https://solidcanvas.com/" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content="/og-image.jpg" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://designanything.com/" />
+        <meta property="twitter:url" content="https://solidcanvas.com/" />
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
         <meta property="twitter:image" content="/og-image.jpg" />

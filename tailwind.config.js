@@ -8,9 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#0E3B2E',    // Deep Emerald Green (Rolex inspired)
-        secondary: '#C8A951',  // Gold/Champagne
-        accent: '#1F7AE0',     // Tech Blue
+        primary: '#003135',    // Primary Dark Background
+        secondary: '#024950',  // Secondary Accent
+        accent: '#964734',     // Highlight / Call-to-Action Buttons
+        interactive: '#0FA4AF', // Links / Interactive Elements
+        background: '#AFDDE5', // Backgrounds / Section Contrast
         dark: '#121212',       // Dark mode background
         light: '#FFFFFF',      // White background
         gray: {

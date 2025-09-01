@@ -6,10 +6,10 @@ export default function Footer() {
 
   const footerLinks = {
     services: [
-      { name: 'CAD Modeling', href: '/services#cad' },
-      { name: '3D Design', href: '/services#3d-design' },
-      { name: 'Product Animation', href: '/services#animation' },
-      { name: 'Rendering', href: '/services#rendering' },
+      { name: 'CAD Modeling', href: '/services#cad-modeling' },
+      { name: 'CAE & FEA Analysis', href: '/services#cae-analysis' },
+      { name: 'Solar Structure Design', href: '/services#solar-structures' },
+      { name: 'Rendering & Animation', href: '/services#rendering-animation' },
     ],
     portfolio: [
       { name: 'Mechanical Design', href: '/portfolio?category=mechanical' },
@@ -26,10 +26,10 @@ export default function Footer() {
   }
 
   const socialLinks = [
-    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/designanything/' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/solidcanvas/' },
     { name: 'YouTube', icon: Youtube, href: 'https://www.youtube.com/channel/UCeKbTkZ2z_Rx-6f6uEUroMw' },
-    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/_designanything_/' },
-    { name: 'Pinterest', icon: Pin, href: 'https://in.pinterest.com/Designanything1904/' },
+    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/solidcanvas/' },
+    { name: 'Pinterest', icon: Pin, href: 'https://in.pinterest.com/solidcanvas/' },
   ]
 
   return (
@@ -39,21 +39,21 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">ACD</span>
+              <div className="w-10 h-10 bg-gradient-to-br from-accent to-interactive rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-lg">SC</span>
               </div>
-              <span className="font-playfair text-xl font-bold">DesignAnything</span>
+              <span className="font-playfair text-xl font-bold">SolidCanvas</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Transforming ideas into reality through expert engineering design. 
-              Professional CAD modeling, 3D design, and product animation services.
+              Engineering Design Solutions in CAD, CAE, FEA & Solar Structures. 
+              Delivering precise, reliable, and future-ready engineering solutions.
             </p>
             
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-gray-300">
                 <Mail className="w-5 h-5 text-secondary" />
-                <span>anythingcandesign@gmail.com</span>
+                <span>solidcanvas@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300">
                 <Phone className="w-5 h-5 text-secondary" />
@@ -158,7 +158,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © {currentYear} DesignAnything. All rights reserved.
+              © {currentYear} SolidCanvas. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <Link href="/privacy" className="text-gray-400 hover:text-secondary transition-colors duration-200">

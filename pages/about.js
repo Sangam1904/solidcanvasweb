@@ -28,16 +28,16 @@ export default function About() {
 
   const skills = [
     { name: 'SOLIDWORKS', level: 95 },
-    { name: 'CATIA', level: 90 },
+    { name: 'UG NX', level: 90 },
+    { name: 'ANSYS (CAE/FEA)', level: 88 },
     { name: 'Blender', level: 85 },
-    { name: 'ANSYS', level: 80 },
-    { name: '3DEXPERIENCE', level: 85 }
+    { name: 'Solar Structure Design', level: 92 }
   ]
 
   return (
     <Layout 
       title="About Us"
-      description="Learn about  Design  Anything - a professional CAD modeling and 3D design company. Meet our team and discover our mission to transform ideas into reality."
+      description="Learn about SolidCanvas - a multidisciplinary design solutions provider specializing in mechanical engineering, CAD modeling, CAE, FEA, and solar structure design."
     >
       {/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-dark dark:to-gray-900">
@@ -49,11 +49,12 @@ export default function About() {
             className="text-center"
           >
             <h1 className="text-4xl lg:text-6xl font-playfair font-bold mb-6">
-              About <span className="gradient-text">Anything Can Design</span>
+              About <span className="gradient-text">SolidCanvas</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              We are passionate about transforming ideas into reality through expert engineering design, 
-              innovative CAD modeling, and stunning 3D visualizations.
+              SolidCanvas is a multidisciplinary design solutions provider specializing in mechanical engineering. 
+              Our expertise covers CAD modeling, CAE, FEA, and solar structure design. We collaborate with product 
+              designers, startups, and R&D teams to deliver precise, reliable, and future-ready engineering solutions.
             </p>
           </motion.div>
         </div>
@@ -73,13 +74,14 @@ export default function About() {
                 Our Mission
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                To empower businesses and individuals with cutting-edge CAD modeling and 3D design solutions 
-                that bridge the gap between imagination and reality. We believe that every great product 
-                starts with a great design.
+                To deliver precise, reliable, and future-ready engineering solutions through our expertise in 
+                CAD modeling, CAE, FEA, and solar structure design. We believe in collaborating closely with 
+                product designers, startups, and R&D teams to bring innovative ideas to life.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                Our team combines technical expertise with creative vision to deliver designs that are not 
-                only functional and manufacturable but also aesthetically pleasing and innovative.
+                Our multidisciplinary approach combines mechanical engineering excellence with cutting-edge 
+                design tools to create solutions that are not only functional and manufacturable but also 
+                optimized for performance and sustainability.
               </p>
             </motion.div>
 
@@ -92,21 +94,21 @@ export default function About() {
             >
               <h3 className="text-2xl font-playfair font-bold mb-6">Our Vision</h3>
               <p className="text-lg mb-6 leading-relaxed">
-                To become the leading force in digital design innovation, setting new standards for 
-                CAD modeling, 3D visualization, and product development across industries.
+                To become the leading provider of engineering design solutions, setting new standards for 
+                CAD modeling, CAE analysis, FEA simulation, and solar structure design across industries.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-white rounded-full"></div>
-                  <span>Global design excellence</span>
+                  <span>Engineering excellence</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-white rounded-full"></div>
-                  <span>Innovation leadership</span>
+                  <span>Innovation in design</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-white rounded-full"></div>
-                  <span>Sustainable design solutions</span>
+                  <span>Sustainable engineering solutions</span>
                 </div>
               </div>
             </motion.div>
@@ -175,7 +177,7 @@ export default function About() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -183,24 +185,27 @@ export default function About() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-6">
-                <img 
-                  src="/images/team/sangam.jpg" 
-                  alt="Sangam - Founder & Lead Designer"
-                  className="w-full h-full object-cover"
-                />
+              <div className="w-32 h-32 bg-gradient-to-br from-accent to-interactive rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-4xl font-bold text-white">AR</span>
               </div>
               <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-white">
-                Sangam
+                Abhishek Raut
               </h3>
-              <p className="text-secondary font-medium mb-4">Founder & Lead Designer</p>
+              <p className="text-secondary font-medium mb-4">Business Strategy & Client Relations | CAD & FEA</p>
               <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                Expert in SOLIDWORKS, CATIA, and Blender with over 5 years of experience in 
-                mechanical design and product development.
+                Leads business development and client relations while providing expertise in CAD modeling and FEA analysis.
               </p>
-              <div className="flex justify-center space-x-4">
-                <span className="text-sm text-gray-500 dark:text-gray-400">SOLIDWORKS Expert</span>
-                <span className="text-sm text-gray-500 dark:text-gray-400">CATIA Certified</span>
+              <div className="space-y-2">
+                <div className="flex justify-center space-x-4">
+                  <a href="#" className="text-sm text-interactive hover:text-accent transition-colors">LinkedIn</a>
+                  <a href="#" className="text-sm text-interactive hover:text-accent transition-colors">Instagram</a>
+                </div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">
+                  Contact: [email / phone placeholder]
+                </div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">
+                  Resume: [file link]
+                </div>
               </div>
             </motion.div>
 
@@ -212,19 +217,26 @@ export default function About() {
               className="text-center"
             >
               <div className="w-32 h-32 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-4xl font-bold text-white">A</span>
+                <span className="text-4xl font-bold text-white">AJ</span>
               </div>
               <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-white">
-                Anjali
+                Abhishek Jagtap
               </h3>
-              <p className="text-secondary font-medium mb-4">3D Artist & Animator</p>
+              <p className="text-secondary font-medium mb-4">CAD Modeling (SolidWorks, UG NX) | Solar Structure Design</p>
               <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                Specialized in product visualization, rendering, and animation with expertise 
-                in Blender and advanced lighting techniques.
+                Specialized in advanced CAD modeling using SolidWorks and UG NX, with expertise in solar structure design.
               </p>
-              <div className="flex justify-center space-x-4">
-                <span className="text-sm text-gray-500 dark:text-gray-400">Blender Expert</span>
-                <span className="text-sm text-gray-500 dark:text-gray-400">Animation</span>
+              <div className="space-y-2">
+                <div className="flex justify-center space-x-4">
+                  <a href="#" className="text-sm text-interactive hover:text-accent transition-colors">LinkedIn</a>
+                  <a href="#" className="text-sm text-interactive hover:text-accent transition-colors">Instagram</a>
+                </div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">
+                  Contact: [email / phone placeholder]
+                </div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">
+                  Resume: [file link]
+                </div>
               </div>
             </motion.div>
 
@@ -235,20 +247,58 @@ export default function About() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <div className="w-32 h-32 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-4xl font-bold text-white">R</span>
+              <div className="w-32 h-32 bg-gradient-to-br from-interactive to-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-4xl font-bold text-white">SK</span>
               </div>
               <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-white">
-                Rahul
+                Sangmeshwar Kanade
               </h3>
-              <p className="text-secondary font-medium mb-4">Simulation Engineer</p>
+              <p className="text-secondary font-medium mb-4">CAE & Simulation | Structural Analysis</p>
               <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                ANSYS specialist with deep knowledge in structural analysis, thermal analysis, 
-                and optimization for complex engineering problems.
+                Expert in CAE and simulation with deep knowledge in structural analysis and optimization techniques.
               </p>
-              <div className="flex justify-center space-x-4">
-                <span className="text-sm text-gray-500 dark:text-gray-400">ANSYS Expert</span>
-                <span className="text-sm text-gray-500 dark:text-gray-400">FEA</span>
+              <div className="space-y-2">
+                <div className="flex justify-center space-x-4">
+                  <a href="#" className="text-sm text-interactive hover:text-accent transition-colors">LinkedIn</a>
+                  <a href="#" className="text-sm text-interactive hover:text-accent transition-colors">Instagram</a>
+                </div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">
+                  Contact: [email / phone placeholder]
+                </div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">
+                  Resume: [file link]
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="text-center"
+            >
+              <div className="w-32 h-32 bg-gradient-to-br from-accent to-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-4xl font-bold text-white">SK</span>
+              </div>
+              <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-white">
+                Shubham Kore
+              </h3>
+              <p className="text-secondary font-medium mb-4">Rendering, Animation (Blender) | Marketing Collateral</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+                Specialized in 3D rendering and animation using Blender, creating marketing collateral and visualizations.
+              </p>
+              <div className="space-y-2">
+                <div className="flex justify-center space-x-4">
+                  <a href="#" className="text-sm text-interactive hover:text-accent transition-colors">LinkedIn</a>
+                  <a href="#" className="text-sm text-interactive hover:text-accent transition-colors">Instagram</a>
+                </div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">
+                  Contact: [email / phone placeholder]
+                </div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">
+                  Resume: [file link]
+                </div>
               </div>
             </motion.div>
           </div>
@@ -314,7 +364,7 @@ export default function About() {
               Ready to Work Together?
             </h2>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Let's discuss your project and see how we can bring your ideas to life with our expertise.
+              Let's discuss your engineering project and see how SolidCanvas can deliver precise, reliable solutions for your CAD, CAE, FEA, and solar structure design needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/contact" className="btn-secondary">

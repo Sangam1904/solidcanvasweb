@@ -40,21 +40,21 @@ export default function Navbar({ darkMode, setDarkMode }) {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             {/* OPTION 1: Text-based Logo (Current) */}
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">ACD</span>
+            <div className="w-10 h-10 bg-gradient-to-br from-accent to-interactive rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-lg">SC</span>
             </div>
             
             {/* OPTION 2: Image-based Logo (Uncomment to use) */}
             {/* 
             <img 
               src="/images/logo.png" 
-              alt="DesignAnything" 
+              alt="SolidCanvas" 
               className="h-8 w-auto"
             />
             */}
             
             <span className="font-playfair text-xl font-bold text-primary dark:text-white">
-              DesignAnything
+              SolidCanvas
             </span>
           </Link>
 
